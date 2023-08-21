@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contact page for my resume.">
   <link rel="icon" href="img/freelancer.png" type="image/x-icon">
-  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="main.css">
   <title>Contact</title>
 </head>
 
@@ -124,7 +124,109 @@
       </p>
     </details>
   </aside>
-
+  <hr>
+  <h2>Contact Form</h2>
+  <p>Please feel free to reach out to me!</p>
+  <form action="https://httpbin.org/get" method="get">
+    <!-- User "autofocus" to highlight the first form element -->
+    <fieldset>
+      <legend>Personal Info</legend>
+      <p>
+        <label for="fullName">Full Name:</label>
+        <input type="text" name="fullName" id="fullName"
+          placeholder="George Washington" autocomplete="on" required>
+      </p>
+      <p>
+        <label for="company">Company Name:</label>
+        <input type="text" name="company" id="company"
+          placeholder="Google, Apple..." autocomplete="on" required>
+      </p>
+      <p>
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email"
+          placeholder="youremail@email.com" autocomplete="on" required>
+      </p>
+      <p>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="5553334444"
+          pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+      </p>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Interview Details</legend>
+      <p>
+        <label for="interviewLength">Interview Length:</label>
+        <input type="number" name="interviewLength" id="interviewLength" min="5"
+          max="60" step="5" value="15"> minutes.
+      </p>
+      <!-- datalist is another alternative to select here -->
+      <!-- <p>
+        <label for="pickDay">Pick a Day:</label>
+        <select name="pickDay" id="pickDay">
+          <optgroup label="Weekdays">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+          </optgroup>
+          <optgroup label="Weekends">
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </optgroup>
+        </select>
+      </p> -->
+      <p>
+        <label for="appointmentDate">Choose a Date:</label>
+        <input type="date" id="appointmentDate" name="appointmentDate">
+      </p>
+      <p>
+        <label for="appointmentTime">Choose a Time:</label>
+        <input type="time" id="appointmentTime" name="appointmentTime">
+      </p>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Job Title:</legend>
+      <p>
+        <input type="checkbox" name="jobTitle" id="softwareEngineer"
+          value="softwareEngineer">
+        <label for="softwareEngineer">Software Developer / Engineer</label><br>
+        <input type="checkbox" name="jobTitle" id="fullStack" value="fullStack">
+        <label for="fullStack">Full Stack Developer / Engineer</label><br>
+        <input type="checkbox" name="jobTitle" id="frontEnd" value="frontEnd">
+        <label for="frontEnd">Front End Developer / Engineer</label><br>
+        <input type="checkbox" name="jobTitle" id="backEnd" value="backEnd">
+        <label for="backEnd">Back End Developer / Engineer</label><br>
+        <input type="checkbox" name="jobTitle" id="mobileDev" value="mobileDev">
+        <label for="mobileDev">Mobile App Developer / Engineer</label>
+      </p>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Job Location:</legend>
+      <p>
+        <input type="radio" name="location" id="remote" value="remote">
+        <label for="remote">100% Remote</label><br>
+        <input type="radio" name="location" id="hybrid" value="hybrid">
+        <label for="hybrid">Hybrid Remote</label><br>
+        <input type="radio" name="location" id="onSite" value="onSite">
+        <label for="onSite">On Site</label><br>
+      </p>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Additional Notes:</legend>
+      <label for="notes">Anything else you want to add?</label>
+      <br>
+      <textarea name="notes" id="notes" cols="30" rows="10"
+        placeholder="Type your message here..."></textarea>
+    </fieldset>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
   <hr>
   &lt;&lt;&lt; &copy; Yasin Cakal | <a href="https://codeofcode.org">Code of
     Code</a>&gt;&gt;&gt;

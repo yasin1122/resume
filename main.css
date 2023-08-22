@@ -1,19 +1,30 @@
 body {
-  background-color: #333;
-  color: whitesmoke;
+  background-color: blanchedalmond;
+  color: #333;
+}
+
+ul {
+  list-style-type: disc;
 }
 
 a {
-  color: aliceblue;
+  text-decoration: none;
+  cursor: pointer;
+  color: blue;
 }
 
 a:visited {
-  color: lightgray;
+  color: purple;
 }
 
 a:hover,
+a:focus {
+  color: dodgerblue;
+  background-color: gold;
+}
+
 a:active {
-  color: #eee;
+  color: crimson;
 }
 
 table,
@@ -21,7 +32,7 @@ tr,
 th,
 td,
 caption {
-  border: 1px solid #eee;
+  border: 1px solid #333;
   font-family: 'Courier New', Courier, monospace;
   border-collapse: collapse;
   padding: 0.5rem;

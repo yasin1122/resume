@@ -37,3 +37,54 @@ caption {
   border-collapse: collapse;
   padding: 0.5rem;
 }
+
+#homeNav,
+#homeNav * {
+  box-sizing: border-box;
+}
+
+#homeNav {
+  border: 2px solid blue;
+  border-radius: 1.15rem;
+  width: 160px;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+#homeNav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+#homeNav ul li {
+  border-top: 1px solid blue;
+}
+
+#homeNav ul li:first-child {
+  border-top: none;
+}
+
+#homeNav ul li a {
+  display: block;
+}
+
+#homeNav ul li a,
+#homeNav ul li a:visited {
+  color: blue;
+}
+
+#homeNav ul li a:hover,
+#homeNav ul li a:focus {
+  color: blanchedalmond;
+  background-color: blue;
+}
+
+#homeNav ul li:first-child a {
+  border-radius: 1rem 1rem 0 0;
+}
+
+#homeNav ul li:last-child a {
+  border-radius: 0 0 1rem 1rem;
+}
